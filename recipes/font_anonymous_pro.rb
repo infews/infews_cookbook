@@ -1,5 +1,5 @@
 remote_file "Download Anonymous Pro" do
-  source "http://www.ms-studio.com/FontSales/AnonymousPro-1.002.zip"
+  source "http://www.marksimonson.com/assets/content/fonts/AnonymousPro-1.002.zip"
   path "#{Chef::Config[:file_cache_path]}/AnonyousPro-1.002.zip"
 end
 
