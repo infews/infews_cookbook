@@ -1,8 +1,8 @@
-# sprout-exemplar cookbook
+# Infews cookbook
 
 [![Build Status](https://travis-ci.org/pivotal-sprout/sprout-exemplar.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-exemplar)
 
-Template repo for creating standalone cookbooks
+Personal recipes for sprouting up my own workstation
 
 ## Usage
 
@@ -20,16 +20,16 @@ bundle exec soloist
 
 ## Cookbook Usage
 
-### Attributes
-
-*NOTE:* All preferences are namespaced under `sprout => exemplar` they include:
-
-* `path` &mdash; The path to the file that exemplar touches; default is `~/exemplar`
-
 ### Recipes
 
-1. `sprout-exemplar`
-1. `sprout-exemplar::path`
+- `infews_cookbook::font_anonymous_pro`
+- `infews_cookbook::font_inconsolata`
+- `infews_cookbook::marked_bonus_pack`
+
+#### Defaults
+
+- `infews_cookbook::font_anonymous_pro`
+- `infews_cookbook::font_inconsolata`
 
 ## Contributing
 
