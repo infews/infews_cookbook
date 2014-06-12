@@ -42,7 +42,7 @@ ruby_block "Dropbox Backgrounds" do
     Gem.clear_paths
 
     desktop_plist = plist_to_hash
-    desktop_plist["Background"] = rotate_backgrounds_from("/Users/#{WS_USER}/Dropbox/Photos/Desktop", 1800)
+    desktop_plist["Background"] = rotate_backgrounds_from("/Users/#{node['current_user']}/Dropbox/Photos/Desktop", 1800)
 
     File.open(plist_path, "w") do |f|
       f << Plist::Emit.dump(desktop_plist)
